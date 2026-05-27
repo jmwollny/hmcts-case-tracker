@@ -67,7 +67,6 @@ export const taskService = {
    * @returns The updated task
    */
   updateTask: async (id: string, taskData: TaskPayload): Promise<TaskItem> => {
-    console.log(`BODE: ${JSON.stringify(taskData)}`)
     const response = await api.put(`/tasks/${id}`, taskData);
     return response.data.data;
   },
