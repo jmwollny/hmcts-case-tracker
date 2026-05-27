@@ -1,6 +1,7 @@
 # HMCTS Case Tracker
 
 A system to track and manage tasks.
+![Case tracker screenshot](./public/case-tracker.png)
 
 ## Project Overview
 
