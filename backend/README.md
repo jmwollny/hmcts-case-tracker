@@ -37,14 +37,14 @@ To reset the DB simply remove the file e.g. `rm data/case_tracker.db` and restar
 
 ## API Endpoints
 
-GET    /health                 - Health check
-GET    /api                    - API documentation
-POST   /api/tasks              - Create a task
-GET    /api/tasks              - Get all tasks 
-GET    /api/tasks/:id          - Get task by ID
-PATCH  /api/tasks/:id/status   - Update task status
-PUT    /api/tasks/:id          - Update task
-DELETE /api/tasks/:id          - Delete task
+- GET    /health                 - Health check
+- GET    /api                    - API documentation
+- POST   /api/tasks              - Create a task
+- GET    /api/tasks              - Get all tasks 
+- GET    /api/tasks/:id          - Get task by ID
+- PATCH  /api/tasks/:id/status   - Update task status
+- PUT    /api/tasks/:id          - Update task
+- DELETE /api/tasks/:id          - Delete task
 
 ## HTTP Status Codes
 
@@ -121,7 +121,7 @@ curl -i -X DELETE http://localhost:5050/api/tasks/e22cfd4a-c2cc-45a0-a45d-5386d4
 
 ## Testing
 
-Note: These are integration tests which exercise the server by using each API endpoint and verifying the reponses. To void polluting the database with test data the database is initialised inside a test environment which utilises a memory only SQLite database.
+Note: These are integration tests which exercise the server by using each API endpoint and verifying the reponses. To avoid polluting the database with test data the database is initialised inside a test environment which utilises a memory only version.
 
 ```bash
 # Run all tests

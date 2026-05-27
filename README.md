@@ -72,6 +72,7 @@ Generate HTML coverage report(available in the `coverage` folder)
 ```bash
 npm run test:coverage
 ```
+![Backend code coverage](./public/backend_coverage.png)
 
 ### Frontend Tests
 
@@ -89,6 +90,8 @@ Generate HTML coverage report(available in the `coverage` folder)
 ```bash
 npm run test:coverage
 ```
+![Frontend code coverage](./public/frontend_coverage.png)
+
 
 ## Troubleshooting
 
