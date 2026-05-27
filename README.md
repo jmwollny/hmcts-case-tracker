@@ -16,7 +16,7 @@ The HMCTS Case Tracker is a full-stack web application. Key features:
 
 ### Backend Setup
 
-See [backend/README.md](./frontend/README.md) for more details.
+See [backend/README.md](./backend/README.md) for more details.
 
 Create the `.env` file from the example:
 ```bash
