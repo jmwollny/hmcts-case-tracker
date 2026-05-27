@@ -1,0 +1,101 @@
+.task-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 2rem;
+  border: 1px solid white;
+  transition: all 0.3s ease;
+}
+
+.task-card.disabled {
+  opacity: 0.5;
+  pointer-events: none;      
+  user-select: none;          
+  cursor: not-allowed;
+  filter: grayscale(30%);    
+  transition: opacity 0.2s ease;
+}
+
+.task-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #0066cc;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.task-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+  flex: 1;
+  word-break: break-word;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.task-date {
+  font-size: 14px;
+  text-align: right;
+}
+
+.task-description {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 8px 0 0 0;
+  word-break: break-word;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.status-select {
+  flex: 1;
+  min-width: 150px;
+  padding: 6px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 13px;
+  background-color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .task-header {
+    flex-direction: column;
+  }
+
+  .task-header h3 {
+    flex: none;
+  }
+
+  .task-actions {
+    width: 100%;
+  }
+
+  .status-select,
+  .task-actions .btn {
+    flex: 1;
+  }
+}

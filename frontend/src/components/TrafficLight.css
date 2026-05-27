@@ -1,0 +1,44 @@
+.trafficlight-badge {
+  cursor: default;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.trafficlight-dot {
+  height: 0.625rem;
+  width: 0.625rem;
+  border-radius: 50%;
+}
+
+.trafficlight-status-overdue {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border-color: #fca5a5;
+}
+.trafficlight-dot-overdue {
+  background-color: #ef4444;
+}
+
+.trafficlight-status-warning {
+  background-color: #fef3c7;
+  color: #92400e;
+  border-color: #fcd34d;
+}
+.trafficlight-dot-warning {
+  background-color: #f59e0b;
+}
+
+.trafficlight-status-safe {
+  background-color: #d1fae5;
+  color: #065f46;
+  border-color: #6ee7b7;
+}
+.trafficlight-dot-safe {
+  background-color: #10b981;
+}
