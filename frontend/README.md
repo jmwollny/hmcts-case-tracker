@@ -58,7 +58,7 @@ Props:
 Component for displaying a single task.
 
 Props:
-- `task` - Task objectUpdate(id, taskData)` - Handle update action
+- `task` - Current task object
 - `disabled(optional)` - Disable the component
 - `onStatusChange(id, status)` - Handle status change
 - `onEdit(task)` - Handle edit
@@ -70,7 +70,7 @@ Simple styled button - two sizes and three colours.
 Props:
 - `text` - The button label
 - `size` - normal or large
-- `colour` - primary, secondary or danger(used for deleting)
+- `colour` - primary, secondary or danger(used for delete button)
 - `disabled(optional)` - Disable the button
 
 ### StatusDropDown
